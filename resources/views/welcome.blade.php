@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">
 
         <!-- Styles -->
         <style>
@@ -66,7 +67,7 @@
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
-                <div class="title m-b-md">
+                <div class="text-gray-800 text-3xl">
                     Joe Lohr
                 </div>
             </div>
