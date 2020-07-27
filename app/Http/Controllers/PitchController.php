@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Tournament;
-use App\TournamentDate;
+use App\Pitch;
 use Illuminate\Http\Request;
 
-class TournamentController extends Controller
+class PitchController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,12 +14,7 @@ class TournamentController extends Controller
      */
     public function index()
     {
-        $tournaments = Tournament::orderByDesc(TournamentDate::select('date')
-            ->whereColumn('tournament_dates.tournament_id', 'tournaments.id')
-            ->latest()
-            ->take(1)
-        )->get();
-        return view('tournaments.index', compact('tournaments'));
+        //
     }
 
     /**
@@ -47,10 +41,10 @@ class TournamentController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Tournament  $tournament
+     * @param  \App\Pitch  $pitch
      * @return \Illuminate\Http\Response
      */
-    public function show(Tournament $tournament)
+    public function show(Pitch $pitch)
     {
         //
     }
@@ -58,10 +52,10 @@ class TournamentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Tournament  $tournament
+     * @param  \App\Pitch  $pitch
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tournament $tournament)
+    public function edit(Pitch $pitch)
     {
         //
     }
@@ -70,10 +64,10 @@ class TournamentController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Tournament  $tournament
+     * @param  \App\Pitch  $pitch
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Tournament $tournament)
+    public function update(Request $request, Pitch $pitch)
     {
         //
     }
@@ -81,10 +75,10 @@ class TournamentController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Tournament  $tournament
+     * @param  \App\Pitch  $pitch
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Tournament $tournament)
+    public function destroy(Pitch $pitch)
     {
         //
     }
