@@ -24,6 +24,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/tournaments', 'TournamentController@index');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/player', 'PlayerController@index');
+    Route::get('/players', 'PlayerController@index');
     Route::get('/player/{id}', 'PlayerController@show');
 });
