@@ -14,7 +14,8 @@ class PlayerController extends Controller
      */
     public function index()
     {
-        //
+        $players = Player::orderBy('first_name')->get();
+        return view('player.index', compact('players'));
     }
 
     /**
@@ -46,7 +47,7 @@ class PlayerController extends Controller
      */
     public function show(Player $player)
     {
-        //
+        return view('player.show');
     }
 
     /**
