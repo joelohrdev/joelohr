@@ -26,4 +26,5 @@ Route::get('/tournaments', 'TournamentController@index');
 Route::middleware('auth')->group(function () {
     Route::get('/players', 'PlayerController@index');
     Route::get('/player/{id}', 'PlayerController@show');
+    Route::livewire('/player/{player}/bat', 'bat');
 });

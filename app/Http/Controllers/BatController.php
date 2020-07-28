@@ -24,7 +24,7 @@ class BatController extends Controller
      */
     public function create()
     {
-        //
+        return view('bat.create');
     }
 
     /**
