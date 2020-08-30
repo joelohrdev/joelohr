@@ -32,6 +32,8 @@ class Tournament extends Resource
         'name',
     ];
 
+    public static $group = ['Softball'];
+
     /**
      * Get the fields displayed by the resource.
      *

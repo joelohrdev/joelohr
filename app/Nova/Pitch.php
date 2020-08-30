@@ -35,6 +35,8 @@ class Pitch extends Resource
         'id',
     ];
 
+    public static $group = ['Softball'];
+
     /**
      * Get the fields displayed by the resource.
      *

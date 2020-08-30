@@ -32,6 +32,8 @@ class Player extends Resource
         'first_name',
     ];
 
+    public static $group = ['Softball'];
+
     /**
      * Get the fields displayed by the resource.
      *
